@@ -2,7 +2,7 @@
 package flightreservationsystem;
 
 
-public class Ticket {
+public abstract class Ticket {
     public String pnrNumber;
     public String depLocation;
     public String desLocation;
@@ -11,15 +11,18 @@ public class Ticket {
     public double ticketPrice;
     public boolean isCancelled;
     
-    public void getPassengerDetails()
+    Ticket(String pnrNumber,String depLocation,String desLocation, Flight flightName,String seatNumber,double ticketPrice,
+  boolean isCancelled)
     {
-        
+        this.pnrNumber=pnrNumber;
+        this.depLocation=depLocation;
+        this.desLocation=desLocation;
+        this.flightName=flightName;
+        this.seatNumber=seatNumber;
+        this.ticketPrice=ticketPrice;
+        this.isCancelled=isCancelled;
     }
-    
-    public void getStatus()
-    {
-    }
-    public void cancelTicket()
-    {
-    }
+    public  void getPassengerDetails(){}
+    public  void getStatus(){}
+    public  void cancelTicket(){}
 }
