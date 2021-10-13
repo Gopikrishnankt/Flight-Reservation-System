@@ -6,12 +6,12 @@ public abstract class Ticket {
     public String pnrNumber;
     public String depLocation;
     public String desLocation;
-    public Flight flightName;
+    public String flightName;
     public String seatNumber;
     public double ticketPrice;
     public boolean isCancelled;
     
-    Ticket(String pnrNumber,String depLocation,String desLocation, Flight flightName,String seatNumber,double ticketPrice,
+    Ticket(String pnrNumber,String depLocation,String desLocation, String flightName,String seatNumber,double ticketPrice,
   boolean isCancelled)
     {
         this.pnrNumber=pnrNumber;
